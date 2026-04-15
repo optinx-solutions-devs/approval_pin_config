@@ -1,0 +1,296 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* approval_action_pin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-14 00:00+0000\n"
+"PO-Revision-Date: 2026-04-14 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Peru)\n"
+"Language: es_PE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: approval_action_pin
+#: model:ir.module.module,shortdesc:approval_action_pin.module_approval_action_pin
+msgid "Approval Action PIN"
+msgstr "PIN de aprobacion de acciones"
+
+#. module: approval_action_pin
+#: model:ir.module.module,summary:approval_action_pin.module_approval_action_pin
+msgid "Require a user PIN before sensitive confirmations and validations"
+msgstr "Requerir un PIN de usuario antes de confirmaciones y validaciones sensibles"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_approval_pin_set_wizard__new_pin
+msgid "New PIN"
+msgstr "Nuevo PIN"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_approval_pin_set_wizard__confirm_pin
+msgid "Confirm PIN"
+msgstr "Confirmar PIN"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_approval_pin_verify_wizard__pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_res_users__approval_pin_is_set
+msgid "Approval PIN"
+msgstr "PIN de aprobacion"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_approval_pin_verify_wizard__user_id
+msgid "Current User"
+msgstr "Usuario actual"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_res_config_settings__approval_pin_required_sale_confirm
+msgid "Sales Order Confirmation"
+msgstr "Confirmacion de pedido de venta"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_res_config_settings__approval_pin_required_invoice_post
+msgid "Invoice Confirmation"
+msgstr "Confirmacion de factura"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_res_config_settings__approval_pin_required_transfer_validate
+msgid "Transfer Validation"
+msgstr "Validacion de transferencia"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_res_config_settings__approval_pin_required_payment_register
+#: code:addons/approval_action_pin/models/account_payment_register.py:0
+msgid "Register Payment"
+msgstr "Registrar pago"
+
+#. module: approval_action_pin
+#: model:ir.model.fields,field_description:approval_action_pin.field_res_users__approval_pin_is_set
+msgid "Approval PIN Set"
+msgstr "PIN de aprobacion configurado"
+
+#. module: approval_action_pin
+#: model:ir.model,name:approval_action_pin.model_approval_pin_set_wizard
+#: code:addons/approval_action_pin/models/res_users.py:0
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.approval_pin_set_wizard_view_form
+msgid "Set Approval PIN"
+msgstr "Establecer PIN de aprobacion"
+
+#. module: approval_action_pin
+#: model:ir.model,name:approval_action_pin.model_approval_pin_verify_wizard
+msgid "Verify Approval PIN"
+msgstr "Verificar PIN de aprobacion"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_approval_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_simple_modif_approval_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Approval PIN"
+msgstr "PIN de aprobacion"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_approval_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_simple_modif_approval_pin
+msgid "PIN Status"
+msgstr "Estado del PIN"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_approval_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_simple_modif_approval_pin
+msgid "Actions"
+msgstr "Acciones"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_approval_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_simple_modif_approval_pin
+msgid "Set / Change Approval PIN"
+msgstr "Establecer / Cambiar PIN de aprobacion"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_approval_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.view_users_form_simple_modif_approval_pin
+msgid "Clear PIN"
+msgstr "Borrar PIN"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Sales Order Confirmation"
+msgstr "Confirmacion de pedido de venta"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Require a PIN before confirming a sales order."
+msgstr "Requerir un PIN antes de confirmar un pedido de venta."
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Invoice Confirmation"
+msgstr "Confirmacion de factura"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Require a PIN before confirming or posting invoices and receipts."
+msgstr "Requerir un PIN antes de confirmar o publicar facturas y recibos."
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Transfer Validation"
+msgstr "Validacion de transferencia"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Require a PIN before validating an inventory transfer."
+msgstr "Requerir un PIN antes de validar una transferencia de inventario."
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Register Payment"
+msgstr "Registrar pago"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Require a PIN before creating payments from the Register Payment popup."
+msgstr "Requerir un PIN antes de crear pagos desde la ventana emergente de registrar pago."
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Manage User PINs"
+msgstr "Gestionar PIN de usuarios"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Approval PINs are stored per backend user."
+msgstr "Los PIN de aprobacion se almacenan por usuario interno."
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.res_config_settings_view_form
+msgid "Open Users"
+msgstr "Abrir usuarios"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.approval_pin_verify_wizard_view_form
+msgid "Approval PIN Required"
+msgstr "Se requiere PIN de aprobacion"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.approval_pin_verify_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.approval_pin_set_wizard_view_form
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.approval_pin_verify_wizard_view_form
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: approval_action_pin
+#: model_terms:ir.ui.view,arch_db:approval_action_pin.approval_pin_set_wizard_view_form
+msgid "Save PIN"
+msgstr "Guardar PIN"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/models/sale_order.py:0
+msgid "Confirm Sales Order"
+msgstr "Confirmar pedido de venta"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/models/account_move.py:0
+msgid "Confirm Invoice"
+msgstr "Confirmar factura"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/models/stock_picking.py:0
+msgid "Validate Transfer"
+msgstr "Validar transferencia"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/models/res_users.py:0
+msgid "Only administrators can manage another user's approval PIN."
+msgstr "Solo los administradores pueden gestionar el PIN de aprobacion de otro usuario."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/models/res_users.py:0
+msgid "Approval PIN must contain only 4 to 8 digits."
+msgstr "El PIN de aprobacion debe contener solo de 4 a 8 digitos."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/models/res_users.py:0
+msgid "Only administrators can clear an approval PIN."
+msgstr "Solo los administradores pueden borrar un PIN de aprobacion."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/wizard/approval_pin_set_wizard.py:0
+msgid "PIN and confirmation PIN do not match."
+msgstr "El PIN y la confirmacion del PIN no coinciden."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/wizard/approval_pin_set_wizard.py:0
+msgid "Please choose a user."
+msgstr "Por favor, seleccione un usuario."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/wizard/approval_pin_verify_wizard.py:0
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Please enter your approval PIN."
+msgstr "Por favor, ingrese su PIN de aprobacion."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/wizard/approval_pin_verify_wizard.py:0
+msgid "Your user does not have an approval PIN yet. Set one from the Users form first."
+msgstr "Su usuario aun no tiene un PIN de aprobacion. Configure uno primero desde el formulario de usuarios."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/wizard/approval_pin_verify_wizard.py:0
+msgid "Invalid approval PIN."
+msgstr "PIN de aprobacion invalido."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/wizard/approval_pin_verify_wizard.py:0
+msgid "The target record could not be found anymore."
+msgstr "El registro de destino ya no se pudo encontrar."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Secure Approval"
+msgstr "Aprobacion segura"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Enter the approval PIN for %s."
+msgstr "Ingrese el PIN de aprobacion para %s."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Enter Pin"
+msgstr "Ingrese el PIN"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Digits only (Numbers)"
+msgstr "Solo digitos (numeros)"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Show"
+msgstr "Mostrar"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Hide"
+msgstr "Ocultar"
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Checking..."
+msgstr "Verificando..."
+
+#. module: approval_action_pin
+#: code:addons/approval_action_pin/static/src/components/approval_pin_dialog/approval_pin_dialog.js:0
+msgid "Wrong PIN. Please try again."
+msgstr "PIN incorrecto. Intentelo de nuevo."
