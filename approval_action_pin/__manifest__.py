@@ -15,7 +15,7 @@
     "version": "17.0.1.0.0",
     "category": "Tools",
     "author": "Optin Solutions",
-    "website": "https://www.optinsolutions.com",
+    # "website": "https://www.optinsolutions.com",
     "support": "optinassist@gmail.com",
     "price": 21.9,
     "currency": "USD",
