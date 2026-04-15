@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.approval.action.pin</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='invite_users']" position="after">
+                <div id="approval_pin_settings">
+                    <block title="Approval PIN" name="approval_pin_settings_container">
+                        <setting string="Sales Order Confirmation" help="Require a PIN before confirming a sales order.">
+                            <field name="approval_pin_required_sale_confirm"/>
+                        </setting>
+                        <setting string="Invoice Confirmation" help="Require a PIN before confirming or posting invoices and receipts.">
+                            <field name="approval_pin_required_invoice_post"/>
+                        </setting>
+                        <setting string="Transfer Validation" help="Require a PIN before validating an inventory transfer.">
+                            <field name="approval_pin_required_transfer_validate"/>
+                        </setting>
+                        <setting string="Register Payment" help="Require a PIN before creating payments from the Register Payment popup.">
+                            <field name="approval_pin_required_payment_register"/>
+                        </setting>
+                        <setting string="Manage User PINs" help="Approval PINs are stored per backend user.">
+                            <button name="%(base.action_res_users)d" type="action" string="Open Users" class="btn-link" icon="oi-arrow-right"/>
+                        </setting>
+                    </block>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,192 @@
+.approval_pin_dialog {
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.25);
+}
+
+.approval_pin_dialog .modal-header {
+    padding: 0.7rem 0.95rem 0 1.6rem;
+    border-bottom: 0;
+}
+
+.approval_pin_dialog .modal-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #172033;
+}
+
+.approval_pin_dialog_body {
+    padding: 0 1.6rem 1.6rem;
+    background:
+        radial-gradient(circle at top right, rgba(15, 118, 110, 0.12), transparent 32%),
+        linear-gradient(180deg, #f8fafc 0%, #eef6f6 100%);
+}
+
+.approval_pin_dialog .btn-close {
+    margin: 0;
+    padding: 0.2rem;
+    transform: translate(2px, -1px);
+    opacity: 0.7;
+}
+
+.approval_pin_dialog .btn-close:hover {
+    opacity: 1;
+}
+
+.approval_pin_shell {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.approval_pin_intro {
+    padding: 0.25rem 0 0.5rem;
+}
+
+.approval_pin_badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #dff5ef;
+    color: #0f766e;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.approval_pin_heading {
+    margin: 0.85rem 0 0.25rem;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #172033;
+}
+
+.approval_pin_subtitle {
+    margin: 0;
+    color: #526072;
+    font-size: 1rem;
+}
+
+.approval_pin_panel {
+    padding: 1.25rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.approval_pin_label {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: #1e293b;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.approval_pin_input_wrap {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.approval_pin_input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0.95rem 1rem;
+    border-radius: 14px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    color: #0f172a;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.approval_pin_input:focus {
+    outline: none;
+    border-color: #0f766e;
+    box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.12);
+}
+
+.approval_pin_toggle {
+    border: 0;
+    background: transparent;
+    color: #0f766e;
+    font-weight: 700;
+    padding: 0.35rem 0.25rem;
+}
+
+.approval_pin_hint {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    color: #64748b;
+    font-size: 0.92rem;
+}
+
+.approval_pin_error_text {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.approval_pin_hint_text {
+    margin-left: 0;
+}
+
+.approval_pin_hint_text_with_error {
+    margin-left: 0;
+}
+
+.approval_pin_shake {
+    animation: approvalPinShake 0.38s ease-in-out;
+}
+
+@keyframes approvalPinShake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-6px); }
+    80% { transform: translateX(4px); }
+    100% { transform: translateX(0); }
+}
+
+.approval_pin_dialog .modal-footer {
+    padding: 0 1.6rem 1.5rem;
+    border-top: 0;
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0) 0%, rgba(248, 250, 252, 0.95) 100%);
+}
+
+.approval_pin_confirm_btn {
+    min-width: 128px;
+    padding-inline: 1.1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #0f766e 0%, #155e75 100%);
+    border-color: transparent;
+}
+
+.approval_pin_confirm_btn:hover,
+.approval_pin_confirm_btn:focus {
+    background: linear-gradient(135deg, #0d6b64 0%, #134e63 100%);
+    border-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+    .approval_pin_dialog .modal-title {
+        font-size: 1.45rem;
+    }
+
+    .approval_pin_input_wrap,
+    .approval_pin_hint {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .approval_pin_toggle {
+        align-self: flex-end;
+    }
+}
