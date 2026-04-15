@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="approval_action_pin.ApprovalPinDialog">
+        <Dialog title="'Approval PIN'" size="'md'" contentClass="'approval_pin_dialog'" bodyClass="'approval_pin_dialog_body'">
+            <div t-att-class="state.isShaking ? 'approval_pin_shell approval_pin_shake' : 'approval_pin_shell'">
+                <div class="approval_pin_intro">
+                    <div class="approval_pin_badge">Secure Approval</div>
+                    <h3 class="approval_pin_heading" t-esc="props.operationLabel"/>
+                    <p class="approval_pin_subtitle">
+                        Enter the approval PIN for <strong t-esc="props.userName"/>.
+                    </p>
+                </div>
+
+                <div class="approval_pin_panel">
+                    <label class="approval_pin_label" for="approval_pin_input">Approval PIN</label>
+                    <div class="approval_pin_input_wrap">
+                        <input
+                            id="approval_pin_input"
+                            t-ref="pinInput"
+                            class="approval_pin_input"
+                            t-att-type="state.showPin ? 'text' : 'password'"
+                            t-att-value="state.pin"
+                            inputmode="numeric"
+                            autocomplete="one-time-code"
+                            maxlength="8"
+                            placeholder="Enter Pin "
+                            t-on-input="onInput"
+                            t-on-keydown="onKeydown"
+                        />
+                        <button type="button" class="approval_pin_toggle" t-on-click="toggleVisibility">
+                            <t t-esc="state.showPin ? 'Hide' : 'Show'"/>
+                        </button>
+                    </div>
+                    <div class="approval_pin_hint">
+                        <span t-if="state.error" class="approval_pin_error_text" t-esc="state.error"/>
+                        <span t-att-class="state.error ? 'approval_pin_hint_text approval_pin_hint_text_with_error' : 'approval_pin_hint_text'">
+                            Digits only (Numbers)
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <t t-set-slot="footer">
+                <button class="btn btn-primary approval_pin_confirm_btn" t-att-disabled="state.isProcessing" t-on-click="confirm">
+                    <t t-esc="state.isProcessing ? 'Checking...' : 'Confirm'"/>
+                </button>
+                <button class="btn btn-secondary" t-att-disabled="state.isProcessing" t-on-click="cancel">Cancel</button>
+            </t>
+        </Dialog>
+    </t>
+</templates>

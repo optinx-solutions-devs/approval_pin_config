@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="approval_pin_verify_wizard_view_form" model="ir.ui.view">
+        <field name="name">approval.pin.verify.wizard.form</field>
+        <field name="model">approval.pin.verify.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Approval PIN Required">
+                <group>
+                    <field name="operation_label" readonly="1"/>
+                    <field name="user_id" readonly="1"/>
+                    <field name="pin" password="True" required="1"/>
+                    <field name="target_model" invisible="1"/>
+                    <field name="target_method" invisible="1"/>
+                    <field name="target_record_ids" invisible="1"/>
+                    <field name="target_context_json" invisible="1"/>
+                </group>
+                <footer>
+                    <button name="action_confirm_pin" type="object" string="Confirm" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
