@@ -15,7 +15,6 @@ class StockPicking(models.Model):
             target_method="button_validate",
             records=self,
             context=dict(self.env.context),
-            execute_on_server=False,
         )
 
     def action_request_approval_pin_validate(self):

@@ -32,30 +32,6 @@ export function openApprovalPinDialog(env, action) {
                 userName: action.params.user_name,
                 onSuccess: async (nextAction) => {
                     handledSuccess = true;
-                    if (!action.params.execute_on_server) {
-                        const targetIds = action.params.target_record_ids || [];
-                        const targetContext = {
-                            ...(action.params.target_context || {}),
-                            approval_pin_verified: true,
-                        };
-                        await env.services.action.doActionButton({
-                            type: "object",
-                            name: action.params.target_method,
-                            resModel: action.params.target_model,
-                            resId: targetIds.length ? targetIds[0] : false,
-                            resIds: targetIds,
-                            context: targetContext,
-                            buttonContext: { approval_pin_verified: true },
-                            onClose: async () => {
-                                await env.services.action.doAction({
-                                    type: "ir.actions.client",
-                                    tag: "soft_reload",
-                                });
-                            },
-                        });
-                        resolveOnce({ type: "ir.actions.act_window_close" });
-                        return;
-                    }
                     const clonedNextAction = cloneAction(nextAction);
                     if (clonedNextAction && typeof clonedNextAction === "object") {
                         await env.services.action.doAction(clonedNextAction);
