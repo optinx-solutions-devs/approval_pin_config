@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.approval.action.pin</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='invite_users']" position="after">
+                <div id="approval_pin_settings">
+                    <h2>Approval PIN</h2>
+                    <div class="row mt16 o_settings_container" name="approval_pin_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="approval_pin_required_sale_confirm"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="approval_pin_required_sale_confirm"/>
+                                <div class="text-muted">Require a PIN before confirming a sales order.</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="approval_pin_required_invoice_post"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="approval_pin_required_invoice_post"/>
+                                <div class="text-muted">Require a PIN before confirming or posting invoices and receipts.</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="approval_pin_required_transfer_validate"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="approval_pin_required_transfer_validate"/>
+                                <div class="text-muted">Require a PIN before validating an inventory transfer.</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="approval_pin_required_payment_register"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="approval_pin_required_payment_register"/>
+                                <div class="text-muted">Require a PIN before creating customer or vendor payments from the register payment wizard.</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Manage User PINs</span>
+                                <div class="text-muted">Approval PINs are stored per backend user.</div>
+                                <div class="mt8">
+                                    <button name="%(base.action_res_users)d" type="action" string="Open Users" class="btn-link" icon="fa-arrow-right"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

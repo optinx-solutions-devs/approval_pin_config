@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIN Approval</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="margin:0; padding:0; background:#f7f6f8; font-family:Tahoma, Verdana, sans-serif; color:#2b2b2b;">
+  <div style="max-width:1080px; margin:0 auto; padding:20px;">
+    <div style="background:#ffffff; border:1px solid #dcd6e2; border-radius:8px; padding:20px; margin-bottom:14px; box-shadow:0 5px 14px rgba(50,40,60,0.06);">
+      <div style="margin-bottom:10px;">
+        <span style="display:inline-block; background:#ece5ef; color:#4d3550; padding:6px 12px; border:1px solid #d8c8dc; border-radius:4px; font-size:12px; font-weight:700; margin-right:6px;">COMMUNITY</span>
+        <span style="display:inline-block; background:#ece5ef; color:#4d3550; padding:6px 12px; border:1px solid #d8c8dc; border-radius:4px; font-size:12px; font-weight:700;">ENTERPRISE</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:260px;">
+          <h1 style="margin:0 0 8px; font-size:46px; color:#2f2134; font-family:Georgia, 'Times New Roman', serif;">PIN Approval</h1>
+          <p style="margin:0; font-size:19px; line-height:1.45; color:#65596b;">Secure sensitive Odoo actions with a user approval PIN before sales, invoices, inventory transfers, and payments.</p>
+        </div>
+         <img src="./icon.png" alt="PIN Approval" style="width:86px; height:86px; border:1px solid #d8c8dc; border-radius:10px;" />
+      </div>
+    </div>
+
+    <!-- <div style="background:#ffffff; border:1px solid #dcd6e2; border-radius:8px; padding:12px; margin-bottom:14px; box-shadow:0 5px 14px rgba(50,40,60,0.06);">
+      <img src="./banner.png" alt="PIN Approval banner" style="width:100%; border-radius:6px; display:block;" />
+    </div> -->
+
+    <div class="mb-4 bg-white" style="border:1px solid #dcd6e2; border-radius:8px; overflow:hidden;">
+      <ul class="nav nav-tabs justify-content-center bg-white py-2" style="border-bottom:1px solid #dcd6e2;">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#overview" style="color:#4d3550; font-weight:600;">Screenshots</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#feature" style="color:#4d3550; font-weight:600;">Features</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#faq" style="color:#4d3550; font-weight:600;">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#releases" style="color:#4d3550; font-weight:600;">Releases</a></li>
+      </ul>
+      <div class="tab-content p-md-4 p-2 py-3">
+        <div class="tab-pane fade show active" id="overview">
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:14px; margin-bottom:12px; background:#faf9fb;">
+            <h3 style="margin:0 0 8px; font-size:27px; color:#3b2a40; font-family:Georgia, 'Times New Roman', serif;">Step 1: Configure protected actions</h3>
+            <p style="margin:0 0 14px; color:#6b6070; font-size:17px;">Enable PIN protection independently for Sales Order confirmation, Invoice posting, Inventory Transfer validation, and Register Payment.</p>
+            <img src="./assets/configuration.png" alt="Approval PIN configuration" style="width:100%; border:1px solid #e7e1eb; border-radius:8px;" />
+          </div>
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:14px; margin-bottom:12px; background:#faf9fb;">
+            <h3 style="margin:0 0 8px; font-size:27px; color:#3b2a40; font-family:Georgia, 'Times New Roman', serif;">Step 2: Set user approval PINs</h3>
+            <p style="margin:0 0 14px; color:#6b6070; font-size:17px;">Administrators can manage approval PINs per backend user, so each user has their own secure approval code.</p>
+            <img src="./assets/pin_set.png" alt="Set approval PIN" style="width:100%; border:1px solid #e7e1eb; border-radius:8px;" />
+          </div>
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:14px; margin-bottom:12px; background:#faf9fb;">
+            <h3 style="margin:0 0 8px; font-size:27px; color:#3b2a40; font-family:Georgia, 'Times New Roman', serif;">Step 3: Confirm with approval PIN</h3>
+            <p style="margin:0 0 14px; color:#6b6070; font-size:17px;">When a protected action is clicked, users enter their approval PIN before the original Odoo action continues.</p>
+            <img src="./assets/pin_poup.png" alt="Approval PIN popup" style="width:100%; border:1px solid #e7e1eb; border-radius:8px;" />
+          </div>
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:14px; background:#faf9fb;">
+            <h3 style="margin:0 0 8px; font-size:27px; color:#3b2a40; font-family:Georgia, 'Times New Roman', serif;">Step 4: Clear wrong PIN feedback</h3>
+            <p style="margin:0 0 14px; color:#6b6070; font-size:17px;">Wrong PIN attempts show a clear inline warning, keeping the user inside the same approval popup.</p>
+            <img src="./assets/pin_wrong.png" alt="Wrong approval PIN warning" style="width:100%; border:1px solid #e7e1eb; border-radius:8px;" />
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="feature">
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:16px; background:#faf9fb;">
+            <ul style="margin:0; padding-left:22px; font-size:17px; line-height:1.7; color:#564b5b;">
+              <li>Require a PIN before confirming Sales Orders.</li>
+              <li>Require a PIN before confirming or posting customer/vendor invoices.</li>
+              <li>Require a PIN before validating Inventory Transfers.</li>
+              <li>Require a PIN before creating payments from the Register Payment popup.</li>
+              <li>Enable or disable each protected workflow independently from Settings.</li>
+              <li>Store and manage approval PINs per backend user.</li>
+              <li>Clean approval popup with show/hide PIN and inline wrong-PIN feedback.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="faq">
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:16px; margin-bottom:10px;"><strong>Q:</strong> Is Odoo 16 Community and Enterprise supported?<br><strong>A:</strong> Yes, both editions are supported when the related Odoo apps are installed.</div>
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:16px; margin-bottom:10px;"><strong>Q:</strong> Can I protect only one action?<br><strong>A:</strong> Yes, sales, invoices, transfers, and payments can be enabled independently.</div>
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:16px;"><strong>Q:</strong> Are PINs shared across users?<br><strong>A:</strong> No, each backend user can have a separate approval PIN.</div>
+        </div>
+
+        <div class="tab-pane fade" id="releases">
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:16px; margin-bottom:10px;"><strong>v16.0.1.0.0</strong><ul style="margin-top:8px;"><li>Odoo 16 package release.</li><li>Sales, Accounting, Inventory, and Register Payment approval flows included.</li><li>Spanish and Peru Spanish translations included.</li></ul></div>
+          <div style="border:1px solid #e2dbe6; border-radius:8px; padding:16px;">Support: <a href="mailto:optinassist@gmail.com">optinassist@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
