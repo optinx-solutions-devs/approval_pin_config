@@ -16,7 +16,7 @@ Main features:
     "category": "Tools",
     "author": "Optin Solutions",
     "maintainer": "optindev",
-    #"website": "https://www.optinsolutions.com",
+    "website": "https://www.optinsolutions.com",
     "support": "optinassist@gmail.com",
     "license": "LGPL-3",
     "depends": [
