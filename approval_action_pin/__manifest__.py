@@ -17,7 +17,7 @@
     "author": "Optin Solutions",
     # "website": "https://www.optinsolutions.com",
     "support": "optinassist@gmail.com",
-    "price": 21.9,
+    "price": 9.9,
     "currency": "USD",
     "license": "LGPL-3",
     "depends": [
