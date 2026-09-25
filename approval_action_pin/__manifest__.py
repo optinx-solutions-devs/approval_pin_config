@@ -18,8 +18,8 @@ Main features:
     "maintainer": "optindev",
     #"website": "https://www.optinsolutions.com",
     "support": "optinassist@gmail.com",
-    "price": 9.9,
-    "currency": "USD",
+    #"price": 9.9,
+    #"currency": "USD",
     "license": "LGPL-3",
     "depends": [
         "base_setup",
