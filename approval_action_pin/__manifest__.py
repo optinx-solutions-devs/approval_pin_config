@@ -17,8 +17,8 @@ Main features:
     "author": "Optin Solutions",
     "maintainer": "optindev",
     #"website": "https://www.optinsolutions.com",
-    "price": 9.9,
-    "currency": "USD",
+    #"price": 9.9,
+    #"currency": "USD",
     "support": "optinassist@gmail.com",
     "license": "LGPL-3",
     "depends": [
